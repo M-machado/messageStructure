@@ -1,7 +1,7 @@
-package FogLayer.Message;
+package Message;
 
-import FogLayer.Message.Header.AbstractHeader;
-import FogLayer.Message.Payload.AbstractPayload;
+import Message.Header.AbstractHeader;
+import Message.Payload.AbstractPayload;
 
 /**
  * Dev: mmachado on 15/11/16.

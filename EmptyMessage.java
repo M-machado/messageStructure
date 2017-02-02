@@ -1,9 +1,9 @@
-package FogLayer.Message;
+package Message;
 
-import FogLayer.Message.Header.AbstractHeader;
-import FogLayer.Message.Header.EmptyHeader;
-import FogLayer.Message.Payload.AbstractPayload;
-import FogLayer.Message.Payload.EmptyPayload;
+import Message.Header.AbstractHeader;
+import Message.Header.EmptyHeader;
+import Message.Payload.AbstractPayload;
+import Message.Payload.EmptyPayload;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package FogLayer.Message.Payload;
+package Message.Payload;
 
 import java.io.Serializable;
 
