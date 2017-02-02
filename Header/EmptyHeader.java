@@ -7,25 +7,25 @@ import java.io.Serializable;
  * Project Name: p2pPOC
  * IDE: IntelliJ IDEA
  */
-public class EmptyHeader extends AbstractHeader implements Serializable{
+public class EmptyHeader<T> extends AbstractHeader<T> implements Serializable{
 
     @Override
-    public String getDestination() {
-        return "";
+    public T getDestination() {
+        return null;
     }
 
     @Override
-    public String getSource() {
-        return "";
+    public T getSource() {
+        return null;
     }
 
     @Override
-    public void setSource(String source) {
+    public void setSource(T source) {
 
     }
 
     @Override
-    public void setDestination(String destination) {
+    public void setDestination(T destination) {
 
     }
 

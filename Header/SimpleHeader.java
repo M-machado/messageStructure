@@ -7,37 +7,37 @@ import java.io.Serializable;
  * Project Name: p2pPOC
  * IDE: IntelliJ IDEA
  */
-public class SimpleHeader extends AbstractHeader implements Serializable {
+public class SimpleHeader<T> extends AbstractHeader<T> implements Serializable {
 
-    private String source;
+    private T source;
 
-    private String destination;
+    private T destination;
 
-    public SimpleHeader(String source, String destination) {
+    public SimpleHeader(T source, T destination) {
         this.source = source;
         this.destination = destination;
     }
 
     @Override
-    public String getDestination() {
+    public T getDestination() {
         return destination;
     }
 
     @Override
-    public String getSource() {
+    public T getSource() {
         return source;
     }
 
     @Override
-    public void setSource(String source) { this.source = source; }
+    public void setSource(T source) { this.source = source; }
 
     @Override
-    public void setDestination(String destination) { this.destination = destination; }
+    public void setDestination(T destination) { this.destination = destination; }
 
     @Override
     public String toString() {
         return "AbstractHeader Information\n"
-                + "Source: " + this.source + "\n"
-                + "Destination: " + this.destination;
+                + "Source: " + this.source.toString() + "\n"
+                + "Destination: " + this.destination.toString();
     }
 }

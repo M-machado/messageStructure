@@ -7,15 +7,15 @@ import java.io.Serializable;
  * Project Name: p2pPOC
  * IDE: IntelliJ IDEA
  */
-public abstract class AbstractHeader implements Serializable {
+public abstract class AbstractHeader<T> implements Serializable {
 
-    public abstract String getDestination();
+    public abstract T getDestination();
 
-    public abstract String getSource();
+    public abstract T getSource();
 
-    public abstract void setSource(String source);
+    public abstract void setSource(T source);
 
-    public abstract void setDestination(String destination);
+    public abstract void setDestination(T destination);
 
-    public abstract String toString();
+    public abstract T toString();
 }
